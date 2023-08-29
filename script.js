@@ -12,7 +12,8 @@ const { createApp } = Vue
         cityRes: '',
         temperature: '',
         wind: '',
-        humidity: ''
+        humidity: '',
+        showError: false
       }
     },
     methods: {
@@ -51,6 +52,14 @@ const { createApp } = Vue
                     this.showDetails = true
 
                 })
+                .catch(error => {
+                    console.error("Errore nella seconda richiesta axios:", error);
+                });
+            })
+            .catch(error => {
+                console.error("Errore nella prima richiesta axios:", error);
+                this.showError = true
+                this.showDetails = false
             })
         },
     },

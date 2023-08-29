@@ -106,3 +106,12 @@ input[type="submit"]:hover {
     margin-top: 15px;
     font-size: 32px;
 }
+
+.error {
+    background-color: transparent;
+    box-shadow: 2px 2px 2px black;
+    padding: 20px;
+    border: 1px solid azure;
+    border-radius: 10px;
+    margin-top: 20px;
+}
