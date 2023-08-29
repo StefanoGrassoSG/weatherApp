@@ -1,0 +1,108 @@
+@import "./reset.css";
+
+.container {
+    height: 100vh;
+    background: rgb(38,204,204);
+    background: linear-gradient(117deg, rgba(38,204,204,1) 0%, rgba(45,56,83,1) 100%);
+}
+
+header {
+    text-align: center;
+    font-size: 32px;
+}
+
+header h1 {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    text-shadow: 3px 3px 5px rgba(0.8, 0.8, 0.8, 0.8);
+    padding: 10px;
+    color: azure;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 40px;
+    border-radius: 12px;
+    background: rgb(19,37,41);
+    background: linear-gradient(97deg, rgba(19,37,41,1) 0%, rgba(6,249,214,1) 100%);
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.8);
+}
+
+input[type="text"] {
+    width: 78%;
+    padding: 12px;
+    border-radius: 9px;
+    font-size: 28px;
+}
+
+input::placeholder {
+    font-size: 28px;
+  }
+  
+
+input[type="submit"] {
+    padding: 12px 40px;
+    margin-left: 20px;
+    border-radius: 9px;
+    border: 2px solid azure;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 28px;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: azure;
+    color: black;
+}
+
+.weather,
+.city,
+.grade {
+    text-align: center;
+}
+
+.weather {
+    margin-top: 40px;
+}
+
+.weather i {
+    color: grey;
+}
+
+.city {
+    margin: 30px 0;
+    font-size: 40px;
+}
+
+.grade {
+    font-size: 45px;
+}
+
+.grade h3 {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.wind,
+.humidity {
+    text-align: center;
+    color: azure;
+}
+
+.secondary-data {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.secondary-data h5 {
+    font-size: 22px;
+}
+
+.secondary-data h3 {
+    margin-top: 15px;
+    font-size: 32px;
+}
